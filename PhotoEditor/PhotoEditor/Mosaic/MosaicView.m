@@ -45,6 +45,14 @@
 
 }
 
+/**
+ 网上一般有两种生成马赛克图片的方法，一种是使用CIFilter生成，一种是这种，通过像素点转换。请不要使用cifilter，cifilter生成的图片会多带一层50x50透明的画布边框，且原图片的位置在画布中不一定是靠中心。
+ 会导致马赛克图片无法与原图准确贴合
+
+ @param image 源图片
+ @param level 像素点大小
+ @return 生成的马赛克图片
+ */
 - (UIImage *)getMosaicImageWith:(UIImage *)image level:(NSInteger)level{
 	CGImageRef imageRef = image.CGImage;
 	NSUInteger imageW = CGImageGetWidth(imageRef);
