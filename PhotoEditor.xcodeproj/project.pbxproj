@@ -15,6 +15,18 @@
 		7D12538122ACB1E400C6F5D6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D12538022ACB1E400C6F5D6 /* main.m */; };
 		7D12538B22ACB1E400C6F5D6 /* PhotoEditorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D12538A22ACB1E400C6F5D6 /* PhotoEditorTests.m */; };
 		7D12539622ACB1E400C6F5D6 /* PhotoEditorUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D12539522ACB1E400C6F5D6 /* PhotoEditorUITests.m */; };
+		7D1253BE22ACB49D00C6F5D6 /* PathModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D1253A522ACB49D00C6F5D6 /* PathModel.m */; };
+		7D1253BF22ACB49D00C6F5D6 /* MosaicView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D1253A622ACB49D00C6F5D6 /* MosaicView.m */; };
+		7D1253C022ACB49D00C6F5D6 /* EditCommand.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D1253AA22ACB49D00C6F5D6 /* EditCommand.m */; };
+		7D1253C122ACB49D00C6F5D6 /* EditReceiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D1253AC22ACB49D00C6F5D6 /* EditReceiver.m */; };
+		7D1253C222ACB49D00C6F5D6 /* EditInvoker.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D1253AD22ACB49D00C6F5D6 /* EditInvoker.m */; };
+		7D1253C322ACB49D00C6F5D6 /* MosaicPath.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D1253AF22ACB49D00C6F5D6 /* MosaicPath.m */; };
+		7D1253C422ACB49D00C6F5D6 /* PhotoEditorVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D1253B322ACB49D00C6F5D6 /* PhotoEditorVC.m */; };
+		7D1253C522ACB49D00C6F5D6 /* SnapModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D1253B622ACB49D00C6F5D6 /* SnapModel.m */; };
+		7D1253C622ACB49D00C6F5D6 /* SnapGridLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D1253B822ACB49D00C6F5D6 /* SnapGridLayer.m */; };
+		7D1253C722ACB49D00C6F5D6 /* SnapBottomView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D1253B922ACB49D00C6F5D6 /* SnapBottomView.m */; };
+		7D1253C822ACB49D00C6F5D6 /* SnapCornerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D1253BB22ACB49D00C6F5D6 /* SnapCornerView.m */; };
+		7D1253CB22ACB57500C6F5D6 /* EditorModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7D1253CA22ACB57500C6F5D6 /* EditorModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +63,31 @@
 		7D12539122ACB1E400C6F5D6 /* PhotoEditorUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PhotoEditorUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7D12539522ACB1E400C6F5D6 /* PhotoEditorUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PhotoEditorUITests.m; sourceTree = "<group>"; };
 		7D12539722ACB1E400C6F5D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7D1253A522ACB49D00C6F5D6 /* PathModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PathModel.m; sourceTree = "<group>"; };
+		7D1253A622ACB49D00C6F5D6 /* MosaicView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MosaicView.m; sourceTree = "<group>"; };
+		7D1253A822ACB49D00C6F5D6 /* EditReceiver.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditReceiver.h; sourceTree = "<group>"; };
+		7D1253A922ACB49D00C6F5D6 /* PhotoEditorProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoEditorProtocol.h; sourceTree = "<group>"; };
+		7D1253AA22ACB49D00C6F5D6 /* EditCommand.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditCommand.m; sourceTree = "<group>"; };
+		7D1253AB22ACB49D00C6F5D6 /* EditInvoker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditInvoker.h; sourceTree = "<group>"; };
+		7D1253AC22ACB49D00C6F5D6 /* EditReceiver.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditReceiver.m; sourceTree = "<group>"; };
+		7D1253AD22ACB49D00C6F5D6 /* EditInvoker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditInvoker.m; sourceTree = "<group>"; };
+		7D1253AE22ACB49D00C6F5D6 /* EditCommand.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditCommand.h; sourceTree = "<group>"; };
+		7D1253AF22ACB49D00C6F5D6 /* MosaicPath.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MosaicPath.m; sourceTree = "<group>"; };
+		7D1253B022ACB49D00C6F5D6 /* MosaicView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MosaicView.h; sourceTree = "<group>"; };
+		7D1253B122ACB49D00C6F5D6 /* PathModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathModel.h; sourceTree = "<group>"; };
+		7D1253B222ACB49D00C6F5D6 /* MosaicPath.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MosaicPath.h; sourceTree = "<group>"; };
+		7D1253B322ACB49D00C6F5D6 /* PhotoEditorVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoEditorVC.m; sourceTree = "<group>"; };
+		7D1253B522ACB49D00C6F5D6 /* SnapCornerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnapCornerView.h; sourceTree = "<group>"; };
+		7D1253B622ACB49D00C6F5D6 /* SnapModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnapModel.m; sourceTree = "<group>"; };
+		7D1253B722ACB49D00C6F5D6 /* SnapBottomView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnapBottomView.h; sourceTree = "<group>"; };
+		7D1253B822ACB49D00C6F5D6 /* SnapGridLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnapGridLayer.m; sourceTree = "<group>"; };
+		7D1253B922ACB49D00C6F5D6 /* SnapBottomView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnapBottomView.m; sourceTree = "<group>"; };
+		7D1253BA22ACB49D00C6F5D6 /* SnapModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnapModel.h; sourceTree = "<group>"; };
+		7D1253BB22ACB49D00C6F5D6 /* SnapCornerView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SnapCornerView.m; sourceTree = "<group>"; };
+		7D1253BC22ACB49D00C6F5D6 /* SnapGridLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SnapGridLayer.h; sourceTree = "<group>"; };
+		7D1253BD22ACB49D00C6F5D6 /* PhotoEditorVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoEditorVC.h; sourceTree = "<group>"; };
+		7D1253C922ACB57500C6F5D6 /* EditorModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EditorModel.h; sourceTree = "<group>"; };
+		7D1253CA22ACB57500C6F5D6 /* EditorModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EditorModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +143,7 @@
 				7D12537422ACB1E300C6F5D6 /* ViewController.h */,
 				7D12537522ACB1E300C6F5D6 /* ViewController.m */,
 				7D12537722ACB1E300C6F5D6 /* Main.storyboard */,
+				7D1253A322ACB49D00C6F5D6 /* PhotoEditor */,
 				7D12537A22ACB1E400C6F5D6 /* Assets.xcassets */,
 				7D12537C22ACB1E400C6F5D6 /* LaunchScreen.storyboard */,
 				7D12537F22ACB1E400C6F5D6 /* Info.plist */,
@@ -130,6 +168,62 @@
 				7D12539722ACB1E400C6F5D6 /* Info.plist */,
 			);
 			path = PhotoEditorUITests;
+			sourceTree = "<group>";
+		};
+		7D1253A322ACB49D00C6F5D6 /* PhotoEditor */ = {
+			isa = PBXGroup;
+			children = (
+				7D1253BD22ACB49D00C6F5D6 /* PhotoEditorVC.h */,
+				7D1253B322ACB49D00C6F5D6 /* PhotoEditorVC.m */,
+				7D1253C922ACB57500C6F5D6 /* EditorModel.h */,
+				7D1253CA22ACB57500C6F5D6 /* EditorModel.m */,
+				7D1253A422ACB49D00C6F5D6 /* Mosaic */,
+				7D1253B422ACB49D00C6F5D6 /* Snap */,
+			);
+			path = PhotoEditor;
+			sourceTree = "<group>";
+		};
+		7D1253A422ACB49D00C6F5D6 /* Mosaic */ = {
+			isa = PBXGroup;
+			children = (
+				7D1253A522ACB49D00C6F5D6 /* PathModel.m */,
+				7D1253A622ACB49D00C6F5D6 /* MosaicView.m */,
+				7D1253A722ACB49D00C6F5D6 /* EditCommand */,
+				7D1253AF22ACB49D00C6F5D6 /* MosaicPath.m */,
+				7D1253B022ACB49D00C6F5D6 /* MosaicView.h */,
+				7D1253B122ACB49D00C6F5D6 /* PathModel.h */,
+				7D1253B222ACB49D00C6F5D6 /* MosaicPath.h */,
+			);
+			path = Mosaic;
+			sourceTree = "<group>";
+		};
+		7D1253A722ACB49D00C6F5D6 /* EditCommand */ = {
+			isa = PBXGroup;
+			children = (
+				7D1253A822ACB49D00C6F5D6 /* EditReceiver.h */,
+				7D1253A922ACB49D00C6F5D6 /* PhotoEditorProtocol.h */,
+				7D1253AA22ACB49D00C6F5D6 /* EditCommand.m */,
+				7D1253AB22ACB49D00C6F5D6 /* EditInvoker.h */,
+				7D1253AC22ACB49D00C6F5D6 /* EditReceiver.m */,
+				7D1253AD22ACB49D00C6F5D6 /* EditInvoker.m */,
+				7D1253AE22ACB49D00C6F5D6 /* EditCommand.h */,
+			);
+			path = EditCommand;
+			sourceTree = "<group>";
+		};
+		7D1253B422ACB49D00C6F5D6 /* Snap */ = {
+			isa = PBXGroup;
+			children = (
+				7D1253B522ACB49D00C6F5D6 /* SnapCornerView.h */,
+				7D1253B622ACB49D00C6F5D6 /* SnapModel.m */,
+				7D1253B722ACB49D00C6F5D6 /* SnapBottomView.h */,
+				7D1253B822ACB49D00C6F5D6 /* SnapGridLayer.m */,
+				7D1253B922ACB49D00C6F5D6 /* SnapBottomView.m */,
+				7D1253BA22ACB49D00C6F5D6 /* SnapModel.h */,
+				7D1253BB22ACB49D00C6F5D6 /* SnapCornerView.m */,
+				7D1253BC22ACB49D00C6F5D6 /* SnapGridLayer.h */,
+			);
+			path = Snap;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -262,9 +356,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D1253BE22ACB49D00C6F5D6 /* PathModel.m in Sources */,
+				7D1253C022ACB49D00C6F5D6 /* EditCommand.m in Sources */,
+				7D1253C422ACB49D00C6F5D6 /* PhotoEditorVC.m in Sources */,
 				7D12537622ACB1E300C6F5D6 /* ViewController.m in Sources */,
 				7D12538122ACB1E400C6F5D6 /* main.m in Sources */,
+				7D1253CB22ACB57500C6F5D6 /* EditorModel.m in Sources */,
+				7D1253C222ACB49D00C6F5D6 /* EditInvoker.m in Sources */,
 				7D12537322ACB1E300C6F5D6 /* AppDelegate.m in Sources */,
+				7D1253BF22ACB49D00C6F5D6 /* MosaicView.m in Sources */,
+				7D1253C722ACB49D00C6F5D6 /* SnapBottomView.m in Sources */,
+				7D1253C522ACB49D00C6F5D6 /* SnapModel.m in Sources */,
+				7D1253C322ACB49D00C6F5D6 /* MosaicPath.m in Sources */,
+				7D1253C122ACB49D00C6F5D6 /* EditReceiver.m in Sources */,
+				7D1253C622ACB49D00C6F5D6 /* SnapGridLayer.m in Sources */,
+				7D1253C822ACB49D00C6F5D6 /* SnapCornerView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,8 +7,9 @@
 //
 
 #import "ViewController.h"
-
-@interface ViewController ()
+#import "PhotoEditor/PhotoEditorVC.h"
+#import "PhotoEditor/EditorModel.h"
+@interface ViewController ()<UIImagePickerControllerDelegate>
 
 @end
 
@@ -18,6 +19,49 @@
 	[super viewDidLoad];
 	// Do any additional setup after loading the view.
 }
+- (IBAction)pickImage:(id)sender {
+	UIImagePickerControllerSourceType type = UIImagePickerControllerSourceTypePhotoLibrary;
+	
+	if([UIImagePickerController isSourceTypeAvailable:type]){
+		//        if([UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]){
+		//            type = UIImagePickerControllerSourceTypeCamera;
+		//        }
+		
+		UIImagePickerController *picker = [[UIImagePickerController alloc] init];
+		picker.allowsEditing = NO;
+		picker.delegate   = self;
+		picker.sourceType = type;
+		
+		[self presentViewController:picker animated:YES completion:nil];
+	}
+}
 
+#pragma mark- ImagePicker delegate
 
+- (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info
+{
+	UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
+	EditorModel *editModel = [[EditorModel alloc]init];
+	editModel.orgImage = image;
+	PhotoEditorVC *VC = [[PhotoEditorVC alloc]init];
+	VC.model = editModel;
+	__weak typeof(self) weakSelf = self;
+	VC.completeBlock = ^(EditorModel * _Nonnull resultModel) {
+//			[self addPicture];
+		UIImageView *imageView = [[UIImageView alloc]initWithFrame:[UIScreen mainScreen].bounds];
+		imageView.contentMode = UIViewContentModeCenter;
+		if(resultModel.editedImage){
+			imageView.image = resultModel.editedImage ;
+		}else if(resultModel.snappedImage){
+			imageView.image = resultModel.snappedImage ;
+		}if (resultModel.orgImage){
+			imageView.image = resultModel.orgImage ;
+		}
+		[weakSelf.view addSubview:imageView];
+	};
+	[picker dismissViewControllerAnimated:NO completion:^{
+		[self presentViewController:VC animated:NO completion:nil];
+	}];
+	
+}
 @end
