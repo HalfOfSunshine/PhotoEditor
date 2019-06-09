@@ -41,6 +41,7 @@
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary<NSString *,id> *)info
 {
 	UIImage *image = [info objectForKey:UIImagePickerControllerOriginalImage];
+//	因为实战中很可能编辑完成再进入编辑，需要支持之前的撤销操作，所以这里传个model，而不是image
 	EditorModel *editModel = [[EditorModel alloc]init];
 	editModel.orgImage = image;
 	PhotoEditorVC *VC = [[PhotoEditorVC alloc]init];
